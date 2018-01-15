@@ -1,8 +1,8 @@
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 TITLE
-Charged pion fluence inside and around a proton-irradiated Be target проба O.K.
+Charged pion fluence inside and around a proton-irradiated Be target  O.K.
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-BEAM           -55.0                                                  PROTON
+BEAM             0.1                                                  PROTON
 BEAMPOS          0.0       0.0      -50.
 *
 GEOBEGIN                                                              COMBNAME
