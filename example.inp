@@ -3,7 +3,7 @@ TITLE
 Charged pion fluence inside and around a proton-irradiated Be target FIREFOX O.K.
 * источник излучения
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-BEAM            10.0                                                  PROTON
+BEAM           100.0                                                  PROTON
 BEAMPOS          0.0       0.0      -50.
 * описание геометрии эксперимента
 GEOBEGIN                                                              COMBNAME
