@@ -3,7 +3,13 @@ TITLE
 Charged pion fluence inside and around a proton-irradiated Be target O.K.
 * источник излучения
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
+<<<<<<< HEAD
 BEAM          -100.0                                                  PROTON
+=======
+BEAM            100.       0.0       0.0       0.0       0.0       0.0PROTON
+* keyword  momentum mom.spread   diverg.   X-width   Y-width   ignored particle
+* WHAT(1)   WHAT(2)    WHAT(3)  WHAT(4)    WHAT(5)   WHAT(6)     SDUM
+>>>>>>> 37acb0f061195fe0c70d78e6c199a4ab3d952ded
 BEAMPOS          0.0       0.0      -50.
 * описание геометрии эксперимента
 GEOBEGIN                                                              COMBNAME
