@@ -5,7 +5,7 @@ Charged pion fluence inside and around a proton-irradiated Be target O.K.
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 BEAM          -100.0       0.0       0.0       0.0       0.0       0.0PROTON
 * keyword  momentum mom.spread   diverg.   X-width   Y-width   ignored particle
-* WHAT(1)   WHAT(2)    WHAT(3)  WHAT(4)    WHAT(5)   WHAT(6)     SDUM
+*            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 BEAMPOS          0.0       0.0      -50.
 * описание геометрии эксперимента
 GEOBEGIN                                                              COMBNAME
@@ -28,6 +28,7 @@ END
 GEOEND
 * материалы
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
+*            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 MATERIAL          4.    9.0122     1.848        5.                    BERYLLIU
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 *  Be target, 1st and 2nd half
