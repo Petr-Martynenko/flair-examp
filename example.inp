@@ -3,7 +3,7 @@ TITLE
 Charged pion fluence inside and around a proton-irradiated Be target O.K.
 * Define the beam characteristics / источник излучения
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-BEAM          -100.0       0.0       0.0       0.0       0.0       0.0PROTON
+BEAM           -100.       0.0       0.0       0.0       0.0       0.0PROTON
 * keyword  momentum mom.spread   diverg.   X-width   Y-width   ignored particle
 * Define the beam popsition
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
@@ -64,7 +64,7 @@ USRBIN           10.    ENERGY      -51.       10.       10.        5.Edeposit
 USRBIN          -10.      -10.       0.0       20.       20.        5. &
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 * Set the randon number seed
-RANDOMIZ          1. 54217137
+RANDOMIZ          1.
 * инициализирует выполнение программы
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 START         10000.
