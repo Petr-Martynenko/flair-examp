@@ -1,6 +1,7 @@
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 TITLE
 Charged pion fluence inside and around a proton-irradiated Be target O.K.
+DEFAULTS                                                              PRECISIO
 * Define the beam characteristics / источник излучения
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 BEAM           -100.       0.0       0.0       0.0       0.0       0.0PROTON
@@ -31,6 +32,11 @@ GEOEND
 * материалы
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 MATERIAL          4.    9.0122     1.848        5.                    BERYLLIU
+* Stainless-Steel (typical)
+* Stainless-Steel is produced with Cr content ranging from
+* 4 - 19 Atomic Percent, and with C content from 0 - 4 percent.
+MATERIAL                              8.                              Stainles
+COMPOUND         18.  BERYLLIU       74.      IRON        8.    NICKELStainles
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 *  Be target, 1st and 2nd half
 ASSIGNMA    BERYLLIU    regBE3    regBE4
