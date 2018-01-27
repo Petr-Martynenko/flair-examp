@@ -5,7 +5,7 @@ Charged pion fluence inside and around a proton-irradiated Be target O.K.
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 BEAM           -100.       0.0       0.0       0.0       0.0       0.0PROTON
 * keyword  momentum mom.spread   diverg.   X-width   Y-width   ignored particle
-* Define the beam popsition
+* Define the beam position
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 BEAMPOS          0.0       0.0      -50.
 * описание геометрии эксперимента
@@ -28,7 +28,7 @@ regBE4       5 +body3 -body4
 END
 GEOEND
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-* материалы
+* Define the MATERIAL characteristics / материалы
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 MATERIAL          4.    9.0122     1.848        5.                    BERYLLIU
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
@@ -41,6 +41,7 @@ ASSIGNMA      VACUUM    regVA2
 * требуемые результаты
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 * e+e- and gamma production threshold set at 10 MeV
+*            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 EMFCUT        -0.010     0.010        1.  BERYLLIU                    PROD-CUT
 * score in each region energy deposition and stars produced by primaries
 SCORE         ENERGY  BEAMPART
@@ -64,7 +65,7 @@ USRBIN           10.    ENERGY      -51.       10.       10.        5.Edeposit
 USRBIN          -10.      -10.       0.0       20.       20.        5. &
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 * Set the randon number seed
-RANDOMIZ          1.
+RANDOMIZ          1. 54217137.
 * инициализирует выполнение программы
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 START         10000.
