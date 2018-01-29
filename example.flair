@@ -17,7 +17,7 @@ Run: <default>
 	Last:     5
 	Status:   3
 	Pid:      0
-	StartRun: 1517059016
+	StartRun: 1517243337
 
 	# USRxxx data file: example_47.bnx
 	Data: \I_\U.\e
@@ -60,6 +60,16 @@ Run: <default>
 	End
 End
 
+# Material
+Material: Stainles
+	alpha: 0
+	color: #40D0D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
 # Geometry Information
 Geometry:
 	Frame.bsplit: 0.5
@@ -81,12 +91,12 @@ Plot: Red
 	cbtics: 0
 	coord: X-Y
 	cpd: 0
-	extends: 100 75
+	extends: 144 68.2654
 	grid: 0
 	index: 0
 	labels: 1
 	layer: Media
-	origin: 0 0 0
+	origin: 10.6248 6.20507 0
 	subtype: Material
 	title: GeoViewer Red plot
 	x2log: False
@@ -107,7 +117,7 @@ Plot: Green
 	basisv: 1 0 0
 	boundaries: 1
 	coord: Z-X
-	extends: 100 75
+	extends: 100 47.4065
 	labels: 1
 	layer: Media
 	origin: 0 0 0
@@ -123,7 +133,7 @@ Plot: Blue
 	basisv: 0 1 0
 	boundaries: 1
 	coord: Z-Y
-	extends: 100 75
+	extends: 100 47.4065
 	labels: 1
 	layer: Media
 	origin: 0 0 0
@@ -145,7 +155,7 @@ Plot: Magenta
 	cbtics: 0
 	coord: X-Y
 	cpd: 0
-	extends: 100 75
+	extends: 100 47.4065
 	grid: 0
 	index: 0
 	labels: 1
