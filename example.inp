@@ -39,7 +39,9 @@ MATERIAL                              8.                              Stainles
 COMPOUND         18.  BERYLLIU       74.      IRON        8.    NICKELStainles
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 *  Be target, 1st and 2nd half
-ASSIGNMA    BERYLLIU    regBE3    regBE4
+ASSIGNMA    BERYLLIU    regBE3
+*  Be target, 1st and 2nd half
+ASSIGNMA    Stainles    regBE4
 *  External Black Hole
 ASSIGNMA    BLCKHOLE    regBH1
 *  Vacuum
@@ -75,7 +77,7 @@ USRBIN          -10.      -10.       0.0       20.       20.        5. &
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 * Set the randon number seed
 RANDOMIZ          1. 54217137.
-* Set the number of primary histories to be simulated / инициализирует выплнение программы
+* Set the number of primary histories to be simulated in the run / инициализирует выплнение программы
 START         10000.
 * завершает выполнение программы
 STOP
