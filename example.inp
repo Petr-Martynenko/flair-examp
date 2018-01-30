@@ -78,6 +78,6 @@ USRBIN          -10.      -10.       0.0       20.       20.        5. &
 * Set the randon number seed
 RANDOMIZ          1. 54217137.
 * Set the number of primary histories to be simulated in the run / инициализирует выплнение программы
-START         10000.
+START          1000.
 * завершает выполнение программы
 STOP

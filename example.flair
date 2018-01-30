@@ -17,7 +17,7 @@ Run: <default>
 	Last:     5
 	Status:   3
 	Pid:      0
-	StartRun: 1517243337
+	StartRun: 1517295216
 
 	# USRxxx data file: example_47.bnx
 	Data: \I_\U.\e
@@ -54,6 +54,14 @@ Run: <default>
 	# USRxxx data file: example_51.bnn
 	Data: \I_\U.\e
 		Unit: 51
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_52.bnn
+	Data: \I_\U.\e
+		Unit: 52
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
