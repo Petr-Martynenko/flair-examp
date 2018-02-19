@@ -5,13 +5,13 @@ DEFAULTS                                                              PRECISIO
 * Define the beam characteristics / источник излучения
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 BEAM           -100.       0.0       0.0       0.0       0.0       0.0PROTON
-BEAM                                                               1.0ISOTOPE
+BEAM                                                                1.ISOTOPE
 * keyword  momentum mom.spread   diverg.   X-width   Y-width   ignored particle
 * Define the beam position
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 BEAMPOS          0.0       0.0      -50.
-BEAMPOS          0.0      0.15       0.0      0.24       0.0          CYLI-VOL 
-BEAMPOS          0.0       0.0    -0.125                                       
+BEAMPOS          0.0      0.15       0.0      0.24       0.0          CYLI-VOL
+BEAMPOS          0.0       0.0    -0.125
 HI-PROPE         55.      137.
 * описание геометрии эксперимента
 GEOBEGIN                                                              COMBNAME
@@ -67,13 +67,13 @@ USRBDX           50.                 50.                 0.0       10. &
 *
 DCYSCORE         -1.                       PHO-FL1   PHO-FL1          USRBDX
 *
-USRBDX           1.0    PHOTON     -55.0    CAPSIN   CAPSUL1       1.0PHO-FL1
-USRBDX         0.001       0.0     300.0                               &
+USRBDX            1.    PHOTON      -55.    regBE3   CAPSUL1        1.PHO-FL1
+USRBDX         0.001       0.0      300.                               &
 *
 DCYSCORE         -1.                       ELE-FL1   ELE-FL1          USRBDX
 *
-USRBDX           1.0  ELECTRON     -55.0    CAPSIN   CAPSUL1       1.0ELE-FL1
-USRBDX         0.001       0.0     300.0                               &
+USRBDX            1.  ELECTRON      -55.    regBE4   CAPSUL1        1.ELE-FL1
+USRBDX         0.001       0.0      300.                               &
 *
 * Tracklength fluence inside the target, Upstream part and Downstream part
 * Logarithmic energy intervals
