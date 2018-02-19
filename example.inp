@@ -5,7 +5,7 @@ DEFAULTS                                                              PRECISIO
 * Define the beam characteristics / источник излучения
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 BEAM           -100.       0.0       0.0       0.0       0.0       0.0PROTON
-BEAM                                                                1.ISOTOPE
+* BEAM                                                                1.ISOTOPE
 * keyword  momentum mom.spread   diverg.   X-width   Y-width   ignored particle
 * Define the beam position
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
