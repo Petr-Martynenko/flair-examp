@@ -5,7 +5,7 @@ DEFAULTS                                                              PRECISIO
 * Define the beam characteristics / источник излучения
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 BEAM           -100.       0.0       0.0       0.0       0.0       0.0PROTON
-* BEAM                                                                1.ISOTOPE
+*BEAM                                                                1.ISOTOPE
 * keyword  momentum mom.spread   diverg.   X-width   Y-width   ignored particle
 * Define the beam position
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
@@ -65,14 +65,14 @@ USRBDX           -1.   PIONS+-      -47.    regBE3    regBE4      400.piCurrUD
 USRBDX           50.                 50.                 0.0       10. &
 * Now scoring particles entering the scoring box
 *
-* DCYSCORE         -1.                       PHO-FL1   PHO-FL1          USRBDX
+*DCYSCORE         -1.                       PHO-FL1   PHO-FL1          USRBDX
 *
-USRBDX            1.    PHOTON      -55.    regBE3   CAPSUL1        1.PHO-FL1
+USRBDX            1.    PHOTON      -55.    regBE3    regBE4        1.PHO-FL1
 USRBDX         0.001       0.0      300.                               &
 *
-* DCYSCORE         -1.                       ELE-FL1   ELE-FL1          USRBDX
+*DCYSCORE         -1.                       ELE-FL1   ELE-FL1          USRBDX
 *
-USRBDX            1.  ELECTRON      -55.    regBE4   CAPSUL1        1.ELE-FL1
+USRBDX            1.  ELECTRON      -55.    regBE4    regBE4        1.ELE-FL1
 USRBDX         0.001       0.0      300.                               &
 *
 * Tracklength fluence inside the target, Upstream part and Downstream part
