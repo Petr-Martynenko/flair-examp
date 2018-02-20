@@ -58,8 +58,8 @@ EMFCUT        -0.010     0.010        1.  BERYLLIU                    PROD-CUT
 * score in each region energy deposition and stars produced by primaries
 SCORE         ENERGY  BEAMPART
 * Boundary crossing fluence in the middle of the target (log intervals, one-way)
-USRBDX           99.   PIONS+-      -47.    regBE3    regBE4      400.piFluenUD
-USRBDX           50.                 50.                 0.0       10. &
+* USRBDX           99.   PIONS+-      -47.    regBE3    regBE4      400.piFluenUD
+* USRBDX           50.                 50.                 0.0       10. &
 * Boundary crossing current in the middle of the target (log intervals, one-way)
 USRBDX           -1.   PIONS+-      -47.    regBE3    regBE4      400.piCurrUD
 USRBDX           50.                 50.                 0.0       10. &
@@ -67,12 +67,12 @@ USRBDX           50.                 50.                 0.0       10. &
 *
 *DCYSCORE         -1.                       PHO-FL1   PHO-FL1          USRBDX
 *
-USRBDX            1.    PHOTON      -55.    regBE3    regBE4        1.PHO-FL1
+USRBDX            1.    PHOTON      -53.    regBE3    regBE4        1.PHO-FL1
 USRBDX         0.001       0.0      300.                               &
 *
 *DCYSCORE         -1.                       ELE-FL1   ELE-FL1          USRBDX
 *
-USRBDX            1.  ELECTRON      -55.    regBE4    regBE4        1.ELE-FL1
+USRBDX            1.  ELECTRON      -54.    regBE3    regBE4        1.ELE-FL1
 USRBDX         0.001       0.0      300.                               &
 *
 * Tracklength fluence inside the target, Upstream part and Downstream part
