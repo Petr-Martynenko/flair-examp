@@ -1,7 +1,7 @@
 #!/usr/local/flair/flair
 # FLUKA Project file
 Version: 2
-Title: Charged pion fluence inside and around a proton-irradiated Be target
+Title: Charged pion fluence inside and around a proton-irradiated Be target O.K.
 Input: example.inp
 Submit: *Default
 Tabs: 0.1 0.32 0.56 0.81 1.0
@@ -17,7 +17,7 @@ Run: <default>
 	Last:     5
 	Status:   3
 	Pid:      0
-	StartRun: 1519152274
+	StartRun: 1519229305
 
 	# USRxxx data file: example_47.bnx
 	Data: \I_\U.\e
@@ -66,47 +66,49 @@ Run: <default>
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
-End
 
-# Material
-Material: Stainles
-	alpha: 0
-	color: #40D0D0
-	fuzz: 0.0
-	ior: 1.0
-	shine: 10.0
-	specular: 0.0
+	# USRxxx data file: example_53.bnx
+	Data: \I_\U.\e
+		Unit: 53
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_54.bnx
+	Data: \I_\U.\e
+		Unit: 54
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
 End
 
 # Geometry Information
 Geometry:
-	Frame.bsplit: 0.5
-	Frame.tsplit: 0.5
-	Frame.vsplit: 0.5
 End
 
-# Geometry plot "GeoViewer Red plot"
-Plot: Red
+# Geometry plot "Geometry Charged pion fluence inside and around a proton-irradiated Be target O.K."
+Plot: geometry
 	Format: .eps
 	Type:   Geometry
 	basisu: 1 0 0
 	basisv: 0 1 0
-	boundaries: 1
+	boundaries: 0
 	cbcolors: 0
 	cblog: False
 	cbpalette: FLUKA
 	cbround: 0
 	cbtics: 0
-	coord: X-Y
+	coord: U-V
 	cpd: 0
-	extends: 144 108
+	extends: 100 100
 	grid: 0
 	index: 0
-	labels: 1
-	layer: Media
-	origin: 10.6248 6.20507 0
-	subtype: Material
-	title: GeoViewer Red plot
+	labels: 0
+	origin: 0 0 0
+	subtype: Geometry
+	title: Geometry Charged pion fluence inside and around a proton-irradiated Be target O.K.
 	x2log: False
 	x2tics: 0
 	xlog: False
@@ -117,66 +119,204 @@ Plot: Red
 	ztics: 0
 End
 
-# Geometry plot "GeoViewer Green plot"
-Plot: Green
+# USR-1D plot "USR-1D example 47"
+Plot: example_47_plot
 	Format: .eps
-	Type:   Geometry
-	basisu: 0 0 1
-	basisv: 1 0 0
-	boundaries: 1
-	coord: Z-X
-	extends: 100 75
-	labels: 1
-	layer: Media
-	origin: 0 0 0
-	subtype: Material
-	title: GeoViewer Green plot
-End
-
-# Geometry plot "GeoViewer Blue plot"
-Plot: Blue
-	Format: .eps
-	Type:   Geometry
-	basisu: 0 0 1
-	basisv: 0 1 0
-	boundaries: 1
-	coord: Z-Y
-	extends: 100 75
-	labels: 1
-	layer: Media
-	origin: 0 0 0
-	subtype: Material
-	title: GeoViewer Blue plot
-End
-
-# Geometry plot "GeoViewer Magenta plot"
-Plot: Magenta
-	Format: .eps
-	Type:   Geometry
-	basisu: -1 0 0
-	basisv: 0 1 0
-	boundaries: 1
+	Type:   USR-1D
+	block.0: 0
 	cbcolors: 0
 	cblog: False
 	cbpalette: FLUKA
 	cbround: 0
 	cbtics: 0
-	coord: X-Y
 	cpd: 0
-	extends: 100 75
+	det.0: 0
+	file.0: example_47_tab.lis
 	grid: 0
 	index: 0
-	labels: 1
-	layer: Media
-	origin: 0 0 0
-	subtype: Material
-	title: GeoViewer Magenta plot
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	ps.0: 1
+	pt.0: 0
+	show.0: 1
+	title: USR-1D example 47
+	with.0: histerror
+	x.0: 2
 	x2log: False
 	x2tics: 0
-	xlog: False
+	xlog: True
+	y.0: 0
 	y2log: False
 	y2tics: 0
-	ylog: False
+	ylog: True
+	zlog: False
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D example 48"
+Plot: example_48_plot
+	Format: .eps
+	Type:   USR-1D
+	det.0: 0
+	file.0: example_48_tab.lis
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	title: USR-1D example 48
+	with.0: histerror
+	x.0: 2
+	xlog: 1
+	y.0: 0
+	ylog: 1
+End
+
+# USR-1D plot "USR-1D example 49"
+Plot: example_49_plot
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: False
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	file.0: example_49_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	ps.0: 1
+	pt.0: 0
+	show.0: 1
+	title: USR-1D example 49
+	with.0: histerror
+	x.0: 2
+	x2log: False
+	x2tics: 0
+	xlog: True
+	y.0: 0
+	y2log: False
+	y2tics: 0
+	ylog: True
+	zlog: False
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN example 50"
+Plot: example_50_plot
+	Format: .eps
+	Type:   USRBIN
+	cbcolors: 30
+	cblog: 1
+	cbtics: 1
+	datafile: example_50.bnn
+	geo: -Auto-
+	title: USRBIN example 50
+End
+
+# USRBIN plot "USRBIN example 51"
+Plot: example_51_plot
+	Format: .eps
+	Type:   USRBIN
+	cbcolors: 30
+	cblog: 1
+	cbtics: 1
+	datafile: example_51.bnn
+	geo: -Auto-
+	title: USRBIN example 51
+End
+
+# USRBIN plot "USRBIN example 52"
+Plot: example_52_plot
+	Format: .eps
+	Type:   USRBIN
+	cbcolors: 30
+	cblog: 1
+	cbtics: 1
+	datafile: example_52.bnn
+	geo: -Auto-
+	title: USRBIN example 52
+End
+
+# USR-1D plot "USR-1D example 53"
+Plot: example_53_plot
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: False
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	file.0: example_53_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	ps.0: 1
+	pt.0: 0
+	show.0: 1
+	title: USR-1D example 53
+	with.0: histerror
+	x.0: 2
+	x2log: False
+	x2tics: 0
+	xlog: True
+	y.0: 0
+	y2log: False
+	y2tics: 0
+	ylog: True
+	zlog: False
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D example 54"
+Plot: example_54_plot
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: False
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	file.0: example_54_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	ps.0: 1
+	pt.0: 0
+	show.0: 1
+	title: USR-1D example 54
+	with.0: histerror
+	x.0: 2
+	x2log: False
+	x2tics: 0
+	xlog: True
+	y.0: 0
+	y2log: False
+	y2tics: 0
+	ylog: True
 	zlog: False
 	ztics: 0
 End
