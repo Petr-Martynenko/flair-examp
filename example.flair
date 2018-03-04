@@ -17,7 +17,7 @@ Run: <default>
 	Last:     5
 	Status:   3
 	Pid:      0
-	StartRun: 1520168505
+	StartRun: 1520185568
 
 	# USRxxx data file: example_47.bnx
 	Data: \I_\U.\e
@@ -82,39 +82,103 @@ Run: <default>
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
+
+	# USRxxx data file: example_57.yie
+	Data: \I_\U.\e
+		Unit: 57
+		Type: y
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Material
+Material: Stainles
+	alpha: 0
+	color: #40D0D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: GRAPHI15
+	alpha: 0
+	color: #E050B0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
 End
 
 # Geometry Information
 Geometry:
+	Frame.bsplit: 0.5
+	Frame.tsplit: 0.5
+	Frame.vsplit: 0.5
 End
 
-# Geometry plot "Geometry Charged pion fluence inside and around a proton-irradiated Be target O.K."
-Plot: geometry
+# Geometry plot "GeoViewer Red plot"
+Plot: Red
 	Format: .eps
 	Type:   Geometry
 	basisu: 1 0 0
 	basisv: 0 1 0
-	boundaries: 0
-	cbcolors: 0
-	cblog: False
-	cbpalette: FLUKA
-	cbround: 0
-	cbtics: 0
-	coord: U-V
-	cpd: 0
-	extends: 100 100
-	grid: 0
-	index: 0
-	labels: 0
+	boundaries: 1
+	coord: X-Y
+	extends: 100 47.4065
+	labels: 1
+	layer: Media
 	origin: 0 0 0
-	subtype: Geometry
-	title: Geometry Charged pion fluence inside and around a proton-irradiated Be target O.K.
-	x2log: False
-	x2tics: 0
-	xlog: False
-	y2log: False
-	y2tics: 0
-	ylog: False
-	zlog: False
-	ztics: 0
+	subtype: Material
+	title: GeoViewer Red plot
+End
+
+# Geometry plot "GeoViewer Green plot"
+Plot: Green
+	Format: .eps
+	Type:   Geometry
+	basisu: 0 0 1
+	basisv: 1 0 0
+	boundaries: 1
+	coord: Z-X
+	extends: 100 47.4065
+	labels: 1
+	layer: Media
+	origin: 0 0 0
+	subtype: Material
+	title: GeoViewer Green plot
+End
+
+# Geometry plot "GeoViewer Blue plot"
+Plot: Blue
+	Format: .eps
+	Type:   Geometry
+	basisu: 0 0 1
+	basisv: 0 1 0
+	boundaries: 1
+	coord: Z-Y
+	extends: 100 47.4065
+	labels: 1
+	layer: Media
+	origin: 0 0 0
+	subtype: Material
+	title: GeoViewer Blue plot
+End
+
+# Geometry plot "GeoViewer Magenta plot"
+Plot: Magenta
+	Format: .eps
+	Type:   Geometry
+	basisu: -1 0 0
+	basisv: 0 1 0
+	boundaries: 1
+	coord: X-Y
+	extends: 100 47.4065
+	labels: 1
+	layer: Media
+	origin: 0 0 0
+	subtype: Material
+	title: GeoViewer Magenta plot
 End
