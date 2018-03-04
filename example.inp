@@ -37,8 +37,8 @@ GEOEND
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 MATERIAL          4.    9.0122     1.848        5.                    BERYLLIU
 * You can define Graphite with another density in the following way:
-MATERIAL         6.0                1.50                              GRAPHI15
-LOW-MAT     GRAPHI15       6.0      -3.0     296.0                    CARBON
+MATERIAL          6.                1.50                              GRAPHI15
+LOW-MAT     GRAPHI15        6.       -3.      296.                    CARBON
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+
 * Then you have to assign GRAPHI15 to your region of interest using the ASSIGNMA card.
 * Stainless-Steel (typical)
@@ -50,7 +50,7 @@ COMPOUND         18.  BERYLLIU       74.      IRON        8.    NICKELStainles
 *  Be target, 1st and 2nd half
 ASSIGNMA    BERYLLIU    regBE3
 *  Be target, 1st and 2nd half
-ASSIGNMA    Stainles    regBE4
+ASSIGNMA    GRAPHI15    regBE4
 *  External Black Hole
 ASSIGNMA    BLCKHOLE    regBH1
 *  Vacuum
@@ -63,8 +63,8 @@ EMFCUT        -0.010     0.010        1.  BERYLLIU                    PROD-CUT
 * score in each region energy deposition and stars produced by primaries
 SCORE         ENERGY  BEAMPART
 * Boundary crossing fluence in the middle of the target (log intervals, one-way)
-* USRBDX           99.   PIONS+-      -47.    regBE3    regBE4      400.piFluenUD
-* USRBDX           50.                 50.                 0.0       10. &
+*USRBDX           99.   PIONS+-      -47.    regBE3    regBE4      400.piFluenUD
+*USRBDX           50.                 50.                 0.0       10. &
 * Boundary crossing current in the middle of the target (log intervals, one-way)
 USRBDX           -1.   PIONS+-      -47.    regBE3    regBE4      400.piCurrUD
 USRBDX           50.                 50.                 0.0       10. &
