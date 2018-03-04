@@ -96,6 +96,9 @@ USRBIN          -10.      -10.       0.0       20.       20.        5. &
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 USRBIN           10.   PIONS+-      -52.       10.       10.        5.flux
 USRBIN          -10.      -10.       0.0       20.       20.        5. &
+* I have used USRYIELD scoring card to get angular distribution of muon escaping after transporting through a target
+USRYIELD         12      muon+     -57.0      T     outtarg2       1.0Yieang
+USRYIELD        50.0       0.0     100.0       3.0       0.0        3. &
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 * Set the randon number seed
 RANDOMIZ          1. 54217137.
