@@ -73,7 +73,7 @@ USRBDX           50.                 50.                 0.0       10. &
 *DCYSCORE         -1.                       PHO-FL1   PHO-FL1          USRBDX
 *
 USRBDX            1.   PIONS+-      -53.    regBE3    regBE4      400.piCurrUD
-USRBDX         0.001       0.0      300.                 0.0       10. &
+USRBDX           10.       0.0      300.                 0.0       10. &
 *
 *DCYSCORE         -1.                       ELE-FL1   ELE-FL1          USRBDX
 *
