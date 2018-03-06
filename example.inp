@@ -93,6 +93,7 @@ USRBIN          -50.      -50.      -10.      100.      100.       60. &
 * Cartesian binning of the deposited energy inside the target
 USRBIN           10.    ENERGY      -51.       10.       10.        5.Edeposit
 USRBIN          -10.      -10.       0.0       20.       20.        5. &
+* the calculation of Dose-Equivalent using USRBIN
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 USRBIN           10.   PIONS+-      -52.       10.       10.        5.flux
 USRBIN          -10.      -10.       0.0       20.       20.        5. &
