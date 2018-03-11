@@ -11,8 +11,8 @@ BEAM           -100.       0.0       0.0       0.0       0.0       0.0PROTON
 * Define the beam position
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 BEAMPOS          0.0       0.0      -50.
-BEAMPOS          0.0      0.15       0.0      0.24       0.0          CYLI-VOL
-BEAMPOS          0.0       0.0    -0.125
+* BEAMPOS          0.0      0.15       0.0      0.24       0.0          CYLI-VOL
+* BEAMPOS          0.0       0.0    -0.125
 HI-PROPE         55.      137.
 * описание геометрии эксперимента
 GEOBEGIN                                                              COMBNAME
