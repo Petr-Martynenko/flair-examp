@@ -37,6 +37,7 @@ GEOEND
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 MATERIAL          4.    9.0122     1.848        5.                    BERYLLIU
+MATERIAL          5.                2.37       27.                    BORON
 * You can define Graphite with another density in the following way:
 MATERIAL          6.                1.50                              GRAPHI15
 LOW-MAT     GRAPHI15        6.       -3.      296.                    CARBON
@@ -63,6 +64,12 @@ STERNHEI      5.7409    0.0456    3.7816   0.09569    3.0781          BGO
 MAT-PROP                            452.       NaI
 STERNHEI      6.0572    0.1203     3.592   0.12516    3.0398          NaI
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
+MATERIAL         30.               7.133       29.                    ZINC
+* Ottone (comune).
+* Il rapporto Cu/Zn puo' variare. Il Pb non e' sempre presente.
+MATERIAL                            8.52       30.                    Brass
+COMPOUND         62.    COPPER       35.      ZINC        3.      LEADBrass
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
 *  Be target, 1st and 2nd half
 ASSIGNMA    BERYLLIU    regBE3
 *  Be target, 1st and 2nd half
@@ -120,6 +127,6 @@ USRYIELD         50.       0.0      100.        3.       0.0      503. &
 * Set the randon number seed
 RANDOMIZ          1. 54217137.
 * Set the number of primary histories to be simulated in the run / инициализирует выплнение программы
-START          1000.
+START         2000.
 * завершает выполнение программы
 STOP
