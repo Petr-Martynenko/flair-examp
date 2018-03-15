@@ -41,18 +41,6 @@ MATERIAL          5.                2.37       27.                    BORON
 * You can define Graphite with another density in the following way:
 MATERIAL          6.                1.50                              GRAPHI15
 LOW-MAT     GRAPHI15        6.       -3.      296.                    CARBON
-* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+
-* Then you have to assign GRAPHI15 to your region of interest using the ASSIGNMA card.
-* Stainless-Steel (typical)
-* Stainless-Steel is produced with Cr content ranging from
-* 4 - 19 Atomic Percent, and with C content from 0 - 4 percent.
-MATERIAL                              8.                              Stainles
-COMPOUND         18.  BERYLLIU       74.      IRON        8.    NICKELStainles
-MATERIAL         53.                4.93                              IODINE
-* Sodium iodide NaI
-*
-MATERIAL                           3.667                              NaI
-COMPOUND   -0.153373    SODIUM -0.846627    IODINE                    NaI
 MATERIAL         32.               5.323                              GERMANIU
 MATERIAL         83.               9.747                              BISMUTH
 * Bismuth germanium oxide Bi4_Ge3_O12
@@ -61,14 +49,6 @@ MATERIAL                            7.13                              BGO
 COMPOUND   -0.154126    OXYGEN  -0.17482  GERMANIU -0.671054   BISMUTHBGO
 MAT-PROP                           534.1       BGO
 STERNHEI      5.7409    0.0456    3.7816   0.09569    3.0781          BGO
-MAT-PROP                            452.       NaI
-STERNHEI      6.0572    0.1203     3.592   0.12516    3.0398          NaI
-* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-MATERIAL         30.               7.133       29.                    ZINC
-* Ottone (comune).
-* Il rapporto Cu/Zn puo' variare. Il Pb non e' sempre presente.
-MATERIAL                            8.52       30.                    Brass
-COMPOUND         62.    COPPER       35.      ZINC        3.      LEADBrass
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
 *  Be target, 1st and 2nd half
 ASSIGNMA    BERYLLIU    regBE3
@@ -127,6 +107,6 @@ USRYIELD         50.       0.0      100.        3.       0.0      503. &
 * Set the randon number seed
 RANDOMIZ          1. 54217137.
 * Set the number of primary histories to be simulated in the run / инициализирует выплнение программы
-START         2000.
+START          5000.
 * завершает выполнение программы
 STOP
