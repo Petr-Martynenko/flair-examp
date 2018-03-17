@@ -25,6 +25,7 @@ RPP body3      -10. 10. -10. 10. 0.0 5.
 * plane to separate the upstream and downstream part of the target
 XYP body4      2.5
 END
+* Regions
 * black hole
 regBH1       5 +body1 -body2
 * vacuum around
@@ -33,16 +34,16 @@ regVA2       5 +body2 -body3
 regBE3       5 +body3 +body4
 * Be target 2nd half
 regBE4       5 +body3 -body4
-ENDTERIAL         16.                  2.                              SULFUR
-MATERIAL         17.           .00299473                              CHLORINE
-MATERIAL         19.               0.862                              POTASSIU
-
+END
 GEOEND
 * Define the MATERIAL characteristics / материалы
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 MATERIAL          4.    9.0122     1.848        5.                    BERYLLIU
 MATERIAL          5.                2.37        7.                    BORON
+MATERIAL         16.                  2.                              SULFUR
+MATERIAL         17.           .00299473                              CHLORINE
+MATERIAL         19.               0.862                              POTASSIU
 * You can define Graphite with another density in the following way:
 MATERIAL          6.                1.50                              GRAPHI15
 LOW-MAT     GRAPHI15        6.       -3.      296.                    CARBON
