@@ -33,7 +33,10 @@ regVA2       5 +body2 -body3
 regBE3       5 +body3 +body4
 * Be target 2nd half
 regBE4       5 +body3 -body4
-END
+ENDTERIAL         16.                  2.                              SULFUR
+MATERIAL         17.           .00299473                              CHLORINE
+MATERIAL         19.               0.862                              POTASSIU
+
 GEOEND
 * Define the MATERIAL characteristics / материалы
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
