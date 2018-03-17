@@ -92,6 +92,7 @@ USRTRACK         -1.   PIONS+-      -48.    regBE3     1000.       20.piFluenU
 USRTRACK         50.     0.001                                         &
 USRTRACK         -1.   PIONS+-      -49.    regBE4     1000.       20.piFluenD
 USRTRACK         50.     0.001                                         &
+* USRBIN scores internally is as a function of position within the scoring volum
 * Cartesian binning of the pion fluence inside and around the target
 USRBIN           10.   PIONS+-      -50.       50.       50.       50.piFluBin
 USRBIN          -50.      -50.      -10.      100.      100.       60. &
