@@ -17,7 +17,79 @@ Run: <default>
 	Last:     5
 	Status:   3
 	Pid:      0
-	StartRun: 1522064924
+	StartRun: 1522389982
+
+	# USRxxx data file: example_47.bnx
+	Data: \I_\U.\e
+		Unit: 47
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_48.trk
+	Data: \I_\U.\e
+		Unit: 48
+		Type: t
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_49.trk
+	Data: \I_\U.\e
+		Unit: 49
+		Type: t
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_50.bnn
+	Data: \I_\U.\e
+		Unit: 50
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_51.bnn
+	Data: \I_\U.\e
+		Unit: 51
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_52.bnn
+	Data: \I_\U.\e
+		Unit: 52
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_53.bnx
+	Data: \I_\U.\e
+		Unit: 53
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_54.bnx
+	Data: \I_\U.\e
+		Unit: 54
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_57.yie
+	Data: \I_\U.\e
+		Unit: 57
+		Type: y
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
 End
 
 # Geometry Information
