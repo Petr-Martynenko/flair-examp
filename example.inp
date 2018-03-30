@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-
-*define ACTIV_STUDY 
-*undef ACTIV_STUDY 
-=======
 * #define ACTIV_STUDY 
 * #undef ACTIV_STUDY 
->>>>>>> b10e47076734fa80fef40606a838bd518d448464
 TITLE
 Charged pion fluence inside and around a proton-irradiated Be target O.K.
 * Set the defaults for precision simulations
