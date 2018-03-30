@@ -1,5 +1,5 @@
-*#define ACTIV_STUDY 
-*#undef ACTIV_STUDY 
+* #define ACTIV_STUDY 
+* #undef ACTIV_STUDY 
 TITLE
 Charged pion fluence inside and around a proton-irradiated Be target O.K.
 * Set the defaults for precision simulations
@@ -8,7 +8,7 @@ DEFAULTS                                                              PRECISIO
 * Define the beam characteristics / источник излучения
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 BEAM           -100.       0.0       0.0       0.0       0.0       0.0PROTON
-!@what.n=expr
+* !@what.n=expr
 *BEAM                                                                1.ISOTOPE
 * keyword  momentum mom.spread   diverg.   X-width   Y-width   ignored particle
 * Define the beam position
@@ -16,8 +16,6 @@ BEAM           -100.       0.0       0.0       0.0       0.0       0.0PROTON
 BEAMPOS          0.0       0.0      -50.
 *BEAMPOS          0.0      0.15       0.0      0.24       0.0          CYLI-VOL
 *BEAMPOS          0.0       0.0    -0.125
-BEAMPOS          0.0      0.15       0.0      0.24       0.0          CYLI-VOL
-BEAMPOS          0.0       0.0    -0.125
 HI-PROPE         55.      137.
 * описание геометрии эксперимента
 GEOBEGIN                                                              COMBNAME
@@ -75,10 +73,7 @@ EMFCUT        -0.010     0.001        1.  BERYLLIU                    PROD-CUT
 * score in each region energy deposition and stars produced by primaries
 SCORE         ENERGY  BEAMPART
 * Boundary crossing fluence in the middle of the target (log intervals, one-way)
-*USRBDX           99.   PIONS+-      -47.    regBE3    regBE4      400.piFluenUD
-*USRBDX           50.                 50.                 0.0       10. &
-* Boundary crossing current in the middle of the target (log intervals, one-way)
-USRBDX           -1.   PIONS+-      -47.    regBE3    regBE4      400.piCurrUD
+USRBDX           99.   PIONS+-      -47.    regBE3    regBE4      400.piFluenUD
 USRBDX           50.                 50.                 0.0       10. &
 * Now scoring particles entering the scoring box
 *
