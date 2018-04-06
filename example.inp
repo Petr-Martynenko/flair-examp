@@ -1,11 +1,16 @@
-* #define ACTIV_STUDY 
+#define ACTIV_STUDY 
 * #undef ACTIV_STUDY 
 TITLE
 Charged pion fluence inside and around a proton-irradiated Be target O.K.
-* Set the defaults for precision simulations
+* Set the defaults for precision simulations::::::::
+* EM-CASCA : pure EM cascades
+* EET/TRAN : Energy Transformer or transmutation calculations
+* NEW-DEFA : minimal set of generic defaults (default of DEFAULTS)
+* PRECISIO : precision simulations (recommended)
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 DEFAULTS                                                              PRECISIO
-* Define the beam characteristics / источник излучения
+* Define the beam characteristics::::::::
+* type of particle, energy or momentum, divergence, spatial profile / источник излучения
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 BEAM           -100.       0.0       0.0       0.0       0.0       0.0PROTON
 * !@what.n=expr
@@ -57,8 +62,11 @@ COMPOUND   -0.154126    OXYGEN  -0.17482  GERMANIU -0.671054   BISMUTHBGO
 MAT-PROP                           534.1       BGO
 STERNHEI      5.7409    0.0456    3.7816   0.09569    3.0781          BGO
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+#if  ACTIV_STUDY
 *  Be target, 1st and 2nd half
 ASSIGNMA    BERYLLIU    regBE3
+#else
+#endif
 *  Be target, 1st and 2nd half
 ASSIGNMA    GRAPHI15    regBE4
 *  External Black Hole
