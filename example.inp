@@ -86,7 +86,8 @@ USRBDX           50.                 50.                 0.0       10. &
 * Now scoring particles entering the scoring box
 *
 *DCYSCORE         -1.                       PHO-FL1   PHO-FL1          USRBDX
-*
+*USRBDX can give an estimation of the number of particles that cross a certain area (in units of fluence or flow)
+*the number (per GeV and primary) or the number of particles that cross the area per cm^-2 (per GeV and primary)?
 USRBDX            1.   PIONS+-      -53.    regBE3    regBE4      400.piCurrUD
 USRBDX           10.       0.0      300.                 0.0       10. &
 *
