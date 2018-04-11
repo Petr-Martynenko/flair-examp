@@ -75,6 +75,10 @@ ASSIGNMA    BLCKHOLE    regBH1
 ASSIGNMA      VACUUM    regVA2
 * требуемые результаты
 * e+e- and gamma production threshold set at 10 MeV
+*    WHAT(3) = FUDGEM parameter. This parameter takes into account the
+*              contribution of atomic electrons to multiple scattering. For
+*              production and transport cutoffs larger than 100 keV it must be
+*              set = 1.0, while in the keV region it must be set = 0.0           Default: 0.0
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 EMFCUT        -0.010     0.001        1.  BERYLLIU                    PROD-CUT
