@@ -1,5 +1,5 @@
 #define ACTIV_STUDY 
-* #undef ACTIV_STUDY 
+*#undef ACTIV_STUDY 
 TITLE
 Charged pion fluence inside and around a proton-irradiated Be target O.K.
 * Set the defaults for precision simulations::::::::
@@ -46,10 +46,10 @@ GEOEND
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 MATERIAL          4.    9.0122     1.848        5.                    BERYLLIU
-* MATERIAL          5.                2.37        7.                    BORON
-* MATERIAL         16.                  2.                              SULFUR
-* MATERIAL         17.           .00299473                              CHLORINE
-* MATERIAL         19.               0.862                              POTASSIU
+*MATERIAL          5.                2.37        7.                    BORON
+*MATERIAL         16.                  2.                              SULFUR
+*MATERIAL         17.           .00299473                              CHLORINE
+*MATERIAL         19.               0.862                              POTASSIU
 * You can define Graphite with another density in the following way:
 MATERIAL          6.                1.50                              GRAPHI15
 LOW-MAT     GRAPHI15        6.       -3.      296.                    CARBON
@@ -62,11 +62,11 @@ COMPOUND   -0.154126    OXYGEN  -0.17482  GERMANIU -0.671054   BISMUTHBGO
 MAT-PROP                           534.1       BGO
 STERNHEI      5.7409    0.0456    3.7816   0.09569    3.0781          BGO
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
-#if  ACTIV_STUDY
+#if ACTIV_STUDY 
 *  Be target, 1st and 2nd half
 ASSIGNMA    BERYLLIU    regBE3
-#else
-#endif
+#else  
+#endif  
 *  Be target, 1st and 2nd half
 ASSIGNMA    GRAPHI15    regBE4
 *  External Black Hole
@@ -90,8 +90,8 @@ USRBDX           50.                 50.                 0.0       10. &
 * Now scoring particles entering the scoring box
 *
 *DCYSCORE         -1.                       PHO-FL1   PHO-FL1          USRBDX
-*USRBDX can give an estimation of the number of particles that cross a certain area (in units of fluence or flow)
-*the number (per GeV and primary) or the number of particles that cross the area per cm^-2 (per GeV and primary)?
+* USRBDX can give an estimation of the number of particles that cross a certain area (in units of fluence or flow)
+* the number (per GeV and primary) or the number of particles that cross the area per cm^-2 (per GeV and primary)?
 USRBDX            1.   PIONS+-      -53.    regBE3    regBE4      400.piCurrUD
 USRBDX           10.       0.0      300.                 0.0       10. &
 *
@@ -109,8 +109,8 @@ USRTRACK         -1.   PIONS+-      -49.    regBE4     1000.       20.piFluenD
 USRTRACK         50.     0.001                                         &
 * USRBIN scores internally is as a function of position within the scoring volum
 * Cartesian binning of the pion fluence inside and around the target
-USRBIN           10.   PIONS+-      -50.       50.       50.       50.piFluBin
-USRBIN          -50.      -50.      -10.      100.      100.       60. &
+USRBIN           10.   PIONS+-      -50.       10.       10.       10.piFluBin
+USRBIN          -10.      -10.      -10.      100.      100.       60. &
 * Cartesian binning of the deposited energy inside the target
 USRBIN           10.    ENERGY      -51.       10.       10.        5.Edeposit
 USRBIN          -10.      -10.       0.0       20.       20.        5. &
