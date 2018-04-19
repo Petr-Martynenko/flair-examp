@@ -8,3 +8,4 @@ The results from USRBIN are normalised per unit volume and per unit primary weig
 I try to calculate the differential yield in energy and polar angle in order to obtain the yield 
 
 I would like to get the number of neutrons which are generated in the detector after irradiation by proton ions
+I use USRBDX card to score the energy spectrum of α and Li, but unfortunately I get nothing
