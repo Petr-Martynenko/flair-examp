@@ -17,7 +17,7 @@ Run: <default>
 	Last:     5
 	Status:   3
 	Pid:      0
-	StartRun: 1524763354
+	StartRun: 1525024595
 
 	# USRxxx data file: example_47.bnx
 	Data: \I_\U.\e
@@ -79,14 +79,6 @@ Run: <default>
 	Data: \I_\U.\e
 		Unit: 54
 		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: example_57.yie
-	Data: \I_\U.\e
-		Unit: 57
-		Type: y
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
