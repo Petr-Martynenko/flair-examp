@@ -2,7 +2,7 @@
 directory fluka\flair project
 I tried computing and using USRBIN card to obtain the energy deposited in the detector
 1) Energy deposited (energy deposited whole, Gev/cm3)
-2) Dose (Sv) and 
+2) Dose! I score the dose in GeV/g per primary and then transform it in Sv/h per primary.
 3) the calculation of Dose-Equivalent (Sv per primary) using USRBIN and AUXSCORE 
 The results from USRBIN are normalised per unit volume and per unit primary weight
 
