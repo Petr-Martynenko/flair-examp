@@ -53,6 +53,9 @@ MATERIAL          4.    9.0122     1.848        5.                    BERYLLIU
 * You can define Graphite with another density in the following way:
 MATERIAL          6.                1.50                              GRAPHI15
 LOW-MAT     GRAPHI15        6.       -3.      296.                    CARBON
+* --+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----*
+MATERIAL          6.    12.011       3.5       26.       0.0        0.DIAMOND
+LOW-MAT      DIAMOND        6.       -3.      296.                    CARBON
 MATERIAL         32.               5.323                              GERMANIU
 MATERIAL         83.               9.747                              BISMUTH
 * Bismuth germanium oxide Bi4_Ge3_O12
