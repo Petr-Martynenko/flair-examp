@@ -1,6 +1,7 @@
 # flair-examp
 directory fluka\flair project
 I tried computing and using USRBIN card to obtain the energy deposited in the detector
+   give me the scored result such as xxxx_.xxxx ???
 1) Energy deposited (energy deposited whole, Gev/cm3)
 2) Dose! I score the dose in GeV/g per primary and then transform it in Sv/h per primary.
 3) the calculation of Dose-Equivalent (Sv per primary) using USRBIN and AUXSCORE 
