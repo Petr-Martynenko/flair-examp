@@ -1,7 +1,7 @@
 #!/usr/local/flair/flair
 # FLUKA Project file
 Version: 2
-Title: Charged pion fluence inside and around a proton-irradiated Be target O.K.
+Title: Charged pion fluence inside and around a proton-irradiated Be target
 Input: example.inp
 Submit: *Default
 Tabs: 0.1 0.32 0.56 0.81 1.0
@@ -17,7 +17,55 @@ Run: <default>
 	Last:     5
 	Status:   3
 	Pid:      0
-	StartRun: 1525933991
+	StartRun: 1525936558
+
+	# USRxxx data file: example_47.bnx
+	Data: \I_\U.\e
+		Unit: 47
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_48.trk
+	Data: \I_\U.\e
+		Unit: 48
+		Type: t
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_49.trk
+	Data: \I_\U.\e
+		Unit: 49
+		Type: t
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_50.bnn
+	Data: \I_\U.\e
+		Unit: 50
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_51.bnn
+	Data: \I_\U.\e
+		Unit: 51
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: example_52.bnn
+	Data: \I_\U.\e
+		Unit: 52
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
 End
 
 # Geometry Information
