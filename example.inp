@@ -1,107 +1,48 @@
-#define ACTIV_STUDY 
-*#undef ACTIV_STUDY 
+*...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 TITLE
-Charged pion fluence inside and around a proton-irradiated Be target O.K.
-* Set the defaults for precision simulations::::::::
-* EM-CASCA : pure EM cascades
-* EET/TRAN : Energy Transformer or transmutation calculations
-* NEW-DEFA : minimal set of generic defaults (default of DEFAULTS)
-* PRECISIO : precision simulations (recommended)
-* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-DEFAULTS                                                              PRECISIO
-* Define the beam characteristics::::::::
-* type of particle, energy or momentum, divergence, spatial profile / источник излучения
-* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-BEAM           -100.       0.0       0.0       0.0       0.0       0.0PROTON
-* !@what.n=expr
-*BEAM                                                                1.ISOTOPE
-* keyword  momentum mom.spread   diverg.   X-width   Y-width   ignored particle
-* Define the beam position
-*            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
-BEAMPOS          0.0       0.0      -50.
-*BEAMPOS          0.0      0.15       0.0      0.24       0.0          CYLI-VOL
-*BEAMPOS          0.0       0.0    -0.125
-HI-PROPE         55.      137.
-* описание геометрии эксперимента
+Charged pion fluence inside and around a proton-irradiated Be target
+*...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
+BEAM         50.E+00                                                  PROTON
+BEAMPOS          0.0       0.0     -50.0
+*
 GEOBEGIN                                                              COMBNAME
-    0    0                  A simple Be target inside vacuum
-RPP body1      -5000000. 5000000. -5000000. 5000000. -5000000. 5000000.
-RPP body2      -1000000. 1000000. -1000000. 1000000. -100. 1000000.
-RPP body3      -10. 10. -10. 10. 0.0 5.
+  0 0                       A simple Be target inside vacuum
+RPP body1 -5000000.0 +5000000.0 -5000000.0 +5000000.0 -5000000.0 +5000000.0
+RPP body2 -1000000.0 +1000000.0 -1000000.0 +1000000.0    -100.0  +1000000.0
+RPP body3     -10.0      +10.0      -10.0      +10.0        0.0       +5.0
 * plane to separate the upstream and downstream part of the target
-XYP body4      2.5
+XYP body4       2.5
 END
-* Regions
 * black hole
-regBH1       5 +body1 -body2
+regBH1    5     +body1 -body2
 * vacuum around
-regVA2       5 +body2 -body3
+regVA2    5     +body2 -body3
 * Be target 1st half
-regBE3       5 +body3 +body4
+regBE3    5     +body3 +body4  
 * Be target 2nd half
-regBE4       5 +body3 -body4
+regBE4    5     +body3 -body4  
 END
 GEOEND
-* Define the MATERIAL characteristics / материалы
-*            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
-* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-MATERIAL          4.    9.0122     1.848        5.                    BERYLLIU
-MATERIAL          5.     10.81      2.37        7.                    BORON
-*MATERIAL          6.    12.011        2.        6.                    CARBON
-*MATERIAL         16.                  2.                              SULFUR
-*MATERIAL         17.           .00299473                              CHLORINE
-*MATERIAL         19.               0.862                              POTASSIU
-* You can define Graphite with another density in the following way:
-MATERIAL          6.                1.50                              GRAPHI15
-LOW-MAT     GRAPHI15        6.       -3.      296.                    CARBON
-* --+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----*
-MATERIAL          6.    12.011       3.5       26.       0.0        0.DIAMOND
-LOW-MAT      DIAMOND        6.       -3.      296.                    CARBON
-MATERIAL         32.               5.323                              GERMANIU
-MATERIAL         83.               9.747                              BISMUTH
-* Bismuth germanium oxide Bi4_Ge3_O12
-*
-MATERIAL                            7.13                              BGO
-COMPOUND   -0.154126    OXYGEN  -0.17482  GERMANIU -0.671054   BISMUTHBGO
-MAT-PROP                           534.1       BGO
-STERNHEI      5.7409    0.0456    3.7816   0.09569    3.0781          BGO
-* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
-#if ACTIV_STUDY 
+*...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
+MATERIAL         4.0    9.0122     1.848       5.0                    BERYLLIU
+*...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 *  Be target, 1st and 2nd half
-ASSIGNMA    BERYLLIU    regBE3
-#else  
-#endif  
-*  Be target, 1st and 2nd half
-ASSIGNMA    GRAPHI15    regBE4
+ASSIGNMAT  BERYLLIU   regBE3    regBE4
 *  External Black Hole
-ASSIGNMA    BLCKHOLE    regBH1
+ASSIGNMAT  BLCKHOLE   regBH1
 *  Vacuum
-ASSIGNMA      VACUUM    regVA2
-* требуемые результаты
+ASSIGNMAT   VACUUM    regVA2
+*...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 * e+e- and gamma production threshold set at 10 MeV
-*    WHAT(3) = FUDGEM parameter. This parameter takes into account the contribution of atomic electrons to multiple scattering.
-*              For production and transport cutoffs larger than 100 keV it must be set = 1.0,
-*              while in the keV region it must be set = 0.0           Default: 0.0
-*            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
-* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-EMFCUT        -0.010     0.001        1.  BERYLLIU                    PROD-CUT
+EMFCUT        -0.010     0.010       1.0  BERYLLIU                    PROD-CUT
 * score in each region energy deposition and stars produced by primaries
-SCORE         ENERGY  BEAMPART
+SCORE       ENERGY    BEAMPART 
 * Boundary crossing fluence in the middle of the target (log intervals, one-way)
-USRBDX           99.   PIONS+-      -47.    regBE3    regBE4      400.piFluenUD
-USRBDX           50.                 50.                 0.0       10. &
-* Now scoring particles entering the scoring box
-*
-*DCYSCORE         -1.                       PHO-FL1   PHO-FL1          USRBDX
-* USRBDX can give an estimation of the number of particles that cross a certain area (in units of fluence or flow)
-* the number (per GeV and primary) or the number of particles that cross the area per cm^-2 (per GeV and primary)?
-USRBDX            1.   PIONS+-      -53.    regBE3    regBE4      400.piCurrUD
-USRBDX           10.       0.0      300.                 0.0       10. &
-*
-*DCYSCORE         -1.                       ELE-FL1   ELE-FL1          USRBDX
-*
-USRBDX            1.  ELECTRON      -54.    regBE3    regBE4        1.ELE-FL1
-USRBDX            1.       0.0      300.                               &
+USRBDX          99.0   PIONS+-     -47.0   regBE3  regBE4        400. piFluenUD
+USRBDX         +50.0               +50.0                 0.0      10.0 &
+* Boundary crossing current in the middle of the target (log intervals, one-way)
+USRBDX          -1.0   PIONS+-     -47.0   regBE3  regBE4        400. piCurrUD
+USRBDX         +50.0               +50.0                 0.0      10.0 &
 *
 * Tracklength fluence inside the target, Upstream part and Downstream part
 * Logarithmic energy intervals
