@@ -46,7 +46,8 @@ GEOEND
 *            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 MATERIAL          4.    9.0122     1.848        5.                    BERYLLIU
-*MATERIAL          5.                2.37        7.                    BORON
+MATERIAL          5.     10.81      2.37        7.                    BORON
+MATERIAL          6.    12.011        2.        6.                    CARBON
 *MATERIAL         16.                  2.                              SULFUR
 *MATERIAL         17.           .00299473                              CHLORINE
 *MATERIAL         19.               0.862                              POTASSIU
