@@ -12,4 +12,7 @@ The results from USRBIN are normalised per unit volume and per unit primary weig
 
 I try to calculate the differential yield in energy and polar angle in order to obtain the yield 
 
-I use USRBDX card to score the energy spectrum of α and Li, but unfortunately I get nothing
+I use USRBDX card to score (in units of fluence or flow) the number of particles that cross that  area (per GeV and primary)
+or the number of particles that cross the area per cm^-2 (per GeV and primary)?
+
+My second question arises when using the USRYIELD card:
