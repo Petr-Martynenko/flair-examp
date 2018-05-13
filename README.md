@@ -2,7 +2,7 @@
 directory fluka\flair project
 I would like to get the number of neutrons which are generated in the shielding detector ranging from
 ???cm to ???cm with a step of ???cm after irradiation by proton ions.
-  You keep the outside medium of the detector as vacuum. So no scattered components will be produced from this region.
+  You keep the outside medium of the shielded detector as vacuum. So no scattered components will be produced from this region.
   Then, in the detector wall and other (except sensitive volume of your detector), set
 
         transport cut-off for photon = slightly less than incident beam enegy (i.e for 1.25 MeV incident photon set as 1.24999 MeV like that).
