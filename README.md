@@ -23,3 +23,4 @@ I use USRBDX card to score (in units of fluence or flow) the number of particles
 or the number of particles that cross the area per cm^-2 (per GeV and primary)?
 
 My second question arises when using the USRYIELD card:
+RCC цилиндрическая мишень
