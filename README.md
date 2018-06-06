@@ -13,6 +13,7 @@ I would like to get the number of neutrons which are generated in the shielding 
 I tried computing and using
 USRBIN card to obtain the energy deposited in the detector give me the scored result such as xxxx_.xxxx ???
 1) Energy deposited (energy deposited whole, Gev/cm3)
+USRBIN card to obtain the dose deposited in the detector with bin size 1mmx1mm, radial symmetry
 2) Dose! I score the dose in GeV/g per primary and then transform it in Sv/h per primary.
 3) the calculation of Dose-Equivalent (Sv per primary) using USRBIN and AUXSCORE 
 The results from USRBIN are normalised per unit volume and per unit primary weight
@@ -24,3 +25,4 @@ or the number of particles that cross the area per cm^-2 (per GeV and primary)?
 
 My second question arises when using the USRYIELD card:
 RCC цилиндрическая мишень
+???compile your code, i.e.  $FLUPRO/flutil/lfluka -m fluka -o ./flukahp source.f
