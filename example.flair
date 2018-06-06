@@ -17,7 +17,7 @@ Run: <default>
 	Last:     5
 	Status:   3
 	Pid:      0
-	StartRun: 1526202268
+	StartRun: 1528292349
 
 	# USRxxx data file: example_47.bnx
 	Data: \I_\U.\e
@@ -70,4 +70,144 @@ End
 
 # Geometry Information
 Geometry:
+End
+
+# Geometry plot "Geometry Charged pion fluence inside and around a proton-irradiated Be target"
+Plot: geometry
+	Format: .eps
+	Type:   Geometry
+	basisu: 1 0 0
+	basisv: 0 1 0
+	boundaries: 0
+	cbcolors: 0
+	cblog: False
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	coord: U-V
+	cpd: 0
+	extends: 100 100
+	grid: 0
+	index: 0
+	labels: 0
+	origin: 0 0 0
+	subtype: Geometry
+	title: Geometry Charged pion fluence inside and around a proton-irradiated Be target
+	x2log: False
+	x2tics: 0
+	xlog: False
+	y2log: False
+	y2tics: 0
+	ylog: False
+	zlog: False
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D example 47"
+Plot: example_47_plot
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: False
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	file.0: example_47_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	ps.0: 1
+	pt.0: 0
+	show.0: 1
+	title: USR-1D example 47
+	with.0: histerror
+	x.0: 2
+	x2log: False
+	x2tics: 0
+	xlog: True
+	y.0: 0
+	y2log: False
+	y2tics: 0
+	ylog: True
+	zlog: False
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D example 48"
+Plot: example_48_plot
+	Format: .eps
+	Type:   USR-1D
+	det.0: 0
+	file.0: example_48_tab.lis
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	title: USR-1D example 48
+	with.0: histerror
+	x.0: 2
+	xlog: 1
+	y.0: 0
+	ylog: 1
+End
+
+# USR-1D plot "USR-1D example 49"
+Plot: example_49_plot
+	Format: .eps
+	Type:   USR-1D
+	det.0: 0
+	file.0: example_49_tab.lis
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	title: USR-1D example 49
+	with.0: histerror
+	x.0: 2
+	xlog: 1
+	y.0: 0
+	ylog: 1
+End
+
+# USRBIN plot "USRBIN example 50"
+Plot: example_50_plot
+	Format: .eps
+	Type:   USRBIN
+	cbcolors: 30
+	cblog: 1
+	cbtics: 1
+	datafile: example_50.bnn
+	geo: -Auto-
+	title: USRBIN example 50
+End
+
+# USRBIN plot "USRBIN example 51"
+Plot: example_51_plot
+	Format: .eps
+	Type:   USRBIN
+	cbcolors: 30
+	cblog: 1
+	cbtics: 1
+	datafile: example_51.bnn
+	geo: -Auto-
+	title: USRBIN example 51
+End
+
+# USRBIN plot "USRBIN example 52"
+Plot: example_52_plot
+	Format: .eps
+	Type:   USRBIN
+	cbcolors: 30
+	cblog: 1
+	cbtics: 1
+	datafile: example_52.bnn
+	geo: -Auto-
+	title: USRBIN example 52
 End
