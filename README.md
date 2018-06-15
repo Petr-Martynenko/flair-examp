@@ -2,6 +2,9 @@
 directory fluka\flair project
 I would like to get the number of neutrons which are generated in the shielding detector ranging from
 ???cm to ???cm with a step of ???cm after irradiation by proton ions.
+I created input file with cylindrical target filled with air to check
+RCC цилиндрическая мишень
+
   You keep the outside medium of the shielded detector as vacuum. So no scattered components will be produced from this region.
   Then, in the detector wall and other (except sensitive volume of your detector), set
 
@@ -24,5 +27,4 @@ I use USRBDX card to score (in units of fluence or flow) the number of particles
 or the number of particles that cross the area per cm^-2 (per GeV and primary)?
 
 My second question arises when using the USRYIELD card:
-RCC цилиндрическая мишень
 ???compile your code, i.e.  $FLUPRO/flutil/lfluka -m fluka -o ./flukahp source.f
