@@ -19,7 +19,8 @@ USRBIN card to obtain the energy deposited in the detector give me the scored re
 USRBIN card to obtain the dose deposited in the detector with bin size 1mmx1mm, radial symmetry
 2) Dose! I score the dose in GeV/g per primary and then transform it in Sv/h per primary.
 3) the calculation of Dose-Equivalent (Sv per primary) using USRBIN and AUXSCORE 
-The results from USRBIN are normalised per unit volume and per unit primary weight
+The results from USRBIN are normalised per unit volume and per unit primary weight.
+Fluence will be expressed in photons/(cm^2 * primary).
 
 I try to calculate the differential yield in energy and polar angle in order to obtain the yield 
 
@@ -28,3 +29,4 @@ or the number of particles that cross the area per cm^-2 (per GeV and primary)?
 
 My second question arises when using the USRYIELD card:
 ???compile your code, i.e.  $FLUPRO/flutil/lfluka -m fluka -o ./flukahp source.f
+ USRBIN card always creates as a result files with .bnn extension. Can You advise how to open and read this file to obtain numeric outcome of the simulation? Or you can try to convert the *.bnn file to a ascii file in flair tab run->file, find the *.bnn file and right click and convert.
