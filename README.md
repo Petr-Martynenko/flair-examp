@@ -30,3 +30,5 @@ or the number of particles that cross the area per cm^-2 (per GeV and primary)?
 My second question arises when using the USRYIELD card:
 ???compile your code, i.e.  $FLUPRO/flutil/lfluka -m fluka -o ./flukahp source.f
  USRBIN card always creates as a result files with .bnn extension. Can You advise how to open and read this file to obtain numeric outcome of the simulation? Or you can try to convert the *.bnn file to a ascii file in flair tab run->file, find the *.bnn file and right click and convert.
+USRBDX gives the average fluence on a boundary surface (after dividing by the surface area, directly in FLUKA through the dedicated WHAT or at user
+post-processing stage), while USRTRACK gives the average fluence in a region volume (after dividing by the volume as above).
