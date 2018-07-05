@@ -27,8 +27,23 @@ I try to calculate the differential yield in energy and polar angle in order to 
 I use USRBDX card to score (in units of fluence or flow) the number of particles that cross that  area (per GeV and primary)
 or the number of particles that cross the area per cm^-2 (per GeV and primary)?
 
-My second question arises when using the USRYIELD card:
+To use a user routine and create your own executable the following commands from a terminal should work (FLAIR is an alternative):
+
+$FLUPRO/flutil/fff source.f
+Which will create an object file
+
+Create a new executable with a name relevant for you
+
+$FLUPRO/flutil/lfluka -m fluka -o YOURFLUKA source.o
 ???compile your code, i.e.  $FLUPRO/flutil/lfluka -m fluka -o ./flukahp source.f
- USRBIN card always creates as a result files with .bnn extension. Can You advise how to open and read this file to obtain numeric outcome of the simulation? Or you can try to convert the *.bnn file to a ascii file in flair tab run->file, find the *.bnn file and right click and convert.
+
+Run FLUKA with the executable you created
+(the path to the data file in your source routine should be coherent with the location from where you are running the code)
+$FLUPRO/flutil/rfluka –e YOURFLUKA –M1 scint.par.inp
+
+My second question arises when using the USRYIELD card:
+USRBIN card always creates as a result files with .bnn extension.
+Can You advise how to open and read this file to obtain numeric outcome of the simulation?
+Or you can try to convert the *.bnn file to a ascii file in flair tab run->file, find the *.bnn file and right click and convert.
 USRBDX gives the average fluence on a boundary surface (after dividing by the surface area, directly in FLUKA through the dedicated WHAT or at user
 post-processing stage), while USRTRACK gives the average fluence in a region volume (after dividing by the volume as above).
