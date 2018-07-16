@@ -21,6 +21,7 @@ USRBIN card to obtain the dose deposited in the detector with bin size 1mmx1mm, 
 3) the calculation of Dose-Equivalent (Sv per primary) using USRBIN and AUXSCORE 
 The results from USRBIN are normalised per unit volume and per unit primary weight.
 Fluence will be expressed in photons/(cm^2 * primary).
+Flux will be expressed in (particles/cm^2/s) as a function of energy.
 
 I try to calculate the differential yield in energy and polar angle in order to obtain the yield 
 
