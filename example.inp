@@ -23,28 +23,8 @@ regBE3       5 +body3 +body4
 regBE4       5 +body3 -body4
 END
 GEOEND
-* Define the MATERIAL characteristics / материалы
-*            WHAT(1)   WHAT(2)   WHAT(3)   WHAT(4)   WHAT(5)   WHAT(6)     SDUM
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 MATERIAL          4.    9.0122     1.848        5.                    BERYLLIU
-*MATERIAL         16.                  2.                              SULFUR
-*MATERIAL         17.           .00299473                              CHLORINE
-*MATERIAL         19.               0.862                              POTASSIU
-* --+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----*
-MATERIAL          6.    12.011       3.5       26.                 0.0DIAMOND
-LOW-MAT      DIAMOND        6.       -3.      296.                    CARBON
-MATERIAL         32.               5.323                              GERMANIU
-MATERIAL         83.               9.747                              BISMUTH
-* Bismuth germanium oxide Bi4_Ge3_O12
-*
-MATERIAL                            7.13                              BGO
-COMPOUND   -0.154126    OXYGEN  -0.17482  GERMANIU -0.671054   BISMUTHBGO
-MAT-PROP                           534.1       BGO
-STERNHEI      5.7409    0.0456    3.7816   0.09569    3.0781          BGO
-*  Be target, 1st and 2nd half
-ASSIGNMA    BERYLLIU    regBE3
-*  Be target, 1st and 2nd half
-ASSIGNMA         BGO    regBE4
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 *  Be target, 1st and 2nd half
 ASSIGNMA    BERYLLIU    regBE3    regBE4
@@ -63,37 +43,20 @@ USRBDX           50.                 50.                 0.0       10. &
 * Boundary crossing current in the middle of the target (log intervals, one-way)
 USRBDX           -1.   PIONS+-      -47.    regBE3    regBE4      400.piCurrUD
 USRBDX           50.                 50.                 0.0       10. &
-*
 * Tracklength fluence inside the target, Upstream part and Downstream part
 * Logarithmic energy intervals
-* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 USRTRACK         -1.   PIONS+-      -48.    regBE3     1000.       20.piFluenU
 USRTRACK         50.     0.001                                         &
 USRTRACK         -1.   PIONS+-      -49.    regBE4     1000.       20.piFluenD
 USRTRACK         50.     0.001                                         &
-* USRBIN scores internally is as a function of position within the scoring volum
 * Cartesian binning of the pion fluence inside and around the target
-* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-USRBIN           10.   PIONS+-      -50.       10.       10.       10.piFluBin
-USRBIN          -10.      -10.      -10.      100.      100.       60. &
-* Cartesian binning of the pion fluence inside and around the target 
-*!USRBIN          10.0   PIONS+-     -50.0      50.0      50.0      50. piFluBin
-*!USRBIN         -50.0     -50.0     -10.0     100.0     100.0      60.0   &
-*!Это файл Анита Петрова
+USRBIN           10.   PIONS+-      -50.       50.       50.       50.piFluBin
+USRBIN          -50.      -50.      -10.      100.      100.       60. &
 * Cartesian binning of the deposited energy inside the target
 USRBIN           10.    ENERGY      -51.       10.       10.        5.Edeposit
 USRBIN          -10.      -10.       0.0       20.       20.        5. &
-* the calculation of Dose-Equivalent using USRBIN
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-USRBIN           10.   PIONS+-      -52.       10.       10.        5.flux
-USRBIN          -10.      -10.       0.0       20.       20.        5. &
-* I have used USRYIELD scoring card to get angular distribution of muon escaping after transporting through a target
-*USRYIELD         12.     MUON+      -57.    regBE3    regBE4        1.Yieang
-*USRYIELD         50.       0.0      100.        3.       0.0      503. &
+RANDOMIZ          1.
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-* Set the randon number seed
-RANDOMIZ          1. 54217137.
-* Set the number of primary histories to be simulated in the run / инициализирует выплнение программы
-START          5000.
-* завершает выполнение программы
+START         10000.
 STOP
