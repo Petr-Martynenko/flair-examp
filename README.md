@@ -1,4 +1,11 @@
 # flair-examp
+1.) You can install FLUKA in your $HOME directory, or
+
+2.) Set the permissions for the /user/local/flukagfor folder and files within to enable access by a non root user. To do this use the following commands:
+
+cd /usr/local/flukagfor
+sudo chmod -R a+rX *
+
 directory fluka\flair project
 I would like to get the number of neutrons which are generated in the shielding detector ranging from
 ???cm to ???cm with a step of ???cm after irradiation by proton ions.
