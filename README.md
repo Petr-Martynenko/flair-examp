@@ -12,12 +12,12 @@ RCC цилиндрическая мишень
    This is to avoid transportation of low energy scattered photons and electron.
 
   In the sensitive volume (scorring region set as 1 keV). Then you will get primary photon fluence.
-
+  
 I tried computing and using
 USRBIN card to obtain the energy deposited in the detector give me the scored result such as xxxx_.xxxx ???
 1) Energy deposited (energy deposited whole, GeV/cm3/primary)
 USRBIN card to obtain the dose deposited in the detector with bin size 1mmx1mm, radial symmetry
-2) Dose! I score the dose in GeV/g per primary and then transform it in Sv/h per primary.
+2) Dose! I score the dose in GeV/g per unit primary weight(GeV/g/primary) and then transform dose in Gy, multiply GeV/g by 1.602176462E−7. I am lost on how to convert DOSE to dose rate in Sv/h per primary(Gy/h/primary).
 3) the calculation of Dose-Equivalent (Sv per primary) using USRBIN and AUXSCORE 
 The results from USRBIN are normalised per unit volume and per unit primary weight.
 Fluence will be expressed in particles/GeV/cm2/sr/primary.
@@ -31,7 +31,7 @@ or the number of particles that cross the area per cm^-2 (per GeV and primary)?
 To use a user routine and create your own executable the following commands from a terminal should work (FLAIR is an alternative):
 
 $FLUPRO/flutil/fff source.f
-Which will create an object file
+Which will create an object file, such as $ gfortran -o source.f
 
 Create a new executable with a name relevant for you
 
