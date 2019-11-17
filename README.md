@@ -42,6 +42,8 @@ Run FLUKA with the executable you created
 (the path to the data file in your source routine should be coherent with the location from where you are running the code)
 $FLUPRO/flutil/rfluka –e YOURFLUKA –M1 scint.par.inp
 
+The value you enter in the WHAT(1) of the START card represents the primary histories that the code simulates. 
+
 My second question arises when using the USRYIELD card:
 USRBIN card always creates as a result files with .bnn extension.
 Can You advise how to open and read this file to obtain numeric outcome of the simulation?
