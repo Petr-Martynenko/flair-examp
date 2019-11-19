@@ -20,7 +20,8 @@ USRBIN card to obtain the dose deposited in the detector with bin size 1mmx1mm, 
 2) Dose! I score the dose in GeV/g per unit primary weight(GeV/g/primary) and then transform dose in Gy (i.e. J/kg per primary), multiply GeV/g by 1.602176462E−7. I am lost on how to convert DOSE to dose-rate in Sv/h per primary(Gy/h/primary).
 3) the calculation of Dose-Equivalent (Sv per primary) using USRBIN and AUXSCORE (which you can then convert to uSv/h). 
 The results from USRBIN are normalised per unit volume and per unit primary weight.
-Fluence will be expressed in particles/GeV/cm2/sr/primary.
+Fluence will be expressed in particles/GeV/cm^2/sr/weight in a bin
+(FLUKA scores track-length in cm of particles passing the bin and divides by its volume).
 Flux will be expressed in (particles/cm^2/s) as a function of energy.
 
 I try to calculate the differential yield in energy and polar angle in order to obtain the yield 
