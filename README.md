@@ -28,6 +28,7 @@ I try to calculate the differential yield in energy and polar angle in order to 
 
 I use USRBDX card to score (in units of fluence or flow) the number of particles that cross that  area (per GeV and primary)
 or the number of particles that cross the area per cm^-2 (per GeV and primary)?
+I want to get “effective” dose using conversion coefficient from fluence using USRBDX? Note that you also need to specify DOSE-EQ scoring for WHAT(2) of your USRBDX card. how should i do to attach conversion coefficient with usrbdx card?
 
 To use a user routine and create your own executable the following commands from a terminal should work (FLAIR is an alternative):
 
