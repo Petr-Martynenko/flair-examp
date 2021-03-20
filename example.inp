@@ -6,7 +6,7 @@ BEAM             50.                                                  PROTON
 BEAMPOS          0.0       0.0      -50.
 *
 GEOBEGIN                                                              COMBNAME
-    0    0                  A simple Be target inside vacuum
+    0    0                  A simple Be target inside vacuum 20cm*20cm*5cm
 RPP body1      -5000000. 5000000. -5000000. 5000000. -5000000. 5000000.
 RPP body2      -1000000. 1000000. -1000000. 1000000. -100. 1000000.
 RPP body3      -10. 10. -10. 10. 0.0 5.
@@ -24,7 +24,7 @@ regBE4       5 +body3 -body4
 END
 GEOEND
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-MATERIAL          4.    9.0122     1.848        5.                    BERYLLIU
+MATERIAL          4.               1.848        5.                    BERYLLIU
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 *  Be target, 1st and 2nd half
 ASSIGNMA    BERYLLIU    regBE3    regBE4
@@ -53,10 +53,10 @@ USRTRACK         50.     0.001                                         &
 USRBIN           10.   PIONS+-      -50.       50.       50.       50.piFluBin
 USRBIN          -50.      -50.      -10.      100.      100.       60. &
 * Cartesian binning of the deposited energy inside the target
-USRBIN           10.    ENERGY      -51.       10.       10.        5.Edeposit
+USRBIN           10.      DOSE      -51.       10.       10.        5.Edeposit
 USRBIN          -10.      -10.       0.0       20.       20.        5. &
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 RANDOMIZ          1.
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-START         10099.
+START            40.
 STOP
