@@ -2,7 +2,7 @@
 Version: 300
 Mode: fluka
 Title: Charged pion fluence inside and around a proton-irradiated Be target
-md5: b8601932fa818a43f0e5691cd1d4140c
+md5: 3c1166cabf1c6438faa79682b23c4f25
 Input:
 *..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 TITLE
@@ -62,7 +62,7 @@ USRBIN Edeposit 10. DOSE -51. 10. 10. 5. -10. -10. 0.0 20. 20. 5.
 *..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 RANDOMIZ , 1.
 *..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-START , 400.
+START , 4000.
 STOP
 EndInput
 
@@ -75,7 +75,7 @@ plotengine: Gnuplot
 # Run information
 Run: <default>
 	Status:   3
-	StartRun: 1641131473
+	StartRun: 1641134641
 
 	# USRxxx data file: example_47.bnx
 	Data: \I_\U.\e
@@ -116,89 +116,4 @@ Run: <default>
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
-End
-
-# Plots information
-Plot: Red
-	Type: Geometry
-	basisu: 0 0 1
-	basisv: 1 0 0
-	coord: Z-X
-	extends: 100 75
-	grid: 0
-	layer: Media
-End
-Plot: Green
-	Type: Geometry
-	basisu: 0.836516 0.0173376 0.547668
-	basisv: 0.224144 0.901221 -0.370891
-	extends: 100 75
-	layer: 3D
-End
-Plot: Blue
-	Type: Geometry
-	basisu: 0 0 1
-	coord: Z-Y
-	extends: 100 75
-	layer: Media
-End
-Plot: Magenta
-	Type: Geometry
-	coord: X-Y
-	extends: 100 75
-	layer: Media
-End
-Plot: example_47_plot
-	Type: USR-1D
-	file.0: example_47_tab.lis
-	grid: 0
-	lc.0: red
-	lw.0: 2
-	name.0: Detector 1
-	ndetectors: 1
-	title: USR-1D example 47
-	x.0: 2
-	xlog: 1
-	y.0: 0
-	ylog: 1
-End
-Plot: example_48_plot
-	Type: USR-1D
-	file.0: example_48_tab.lis
-	lc.0: red
-	lw.0: 2
-	name.0: Detector 1
-	ndetectors: 1
-	title: USR-1D example 48
-	x.0: 2
-	xlog: 1
-	y.0: 0
-	ylog: 1
-End
-Plot: example_49_plot
-	Type: USR-1D
-	file.0: example_49_tab.lis
-	lc.0: red
-	lw.0: 2
-	name.0: Detector 1
-	ndetectors: 1
-	title: USR-1D example 49
-	x.0: 2
-	xlog: 1
-	y.0: 0
-	ylog: 1
-End
-Plot: example_50_plot
-	Type: USRBIN
-	cblog: 1
-	cbtics: 1
-	datafile: example_50.bnn
-	title: USRBIN example 50
-End
-Plot: example_51_plot
-	Type: USRBIN
-	cblog: 1
-	cbtics: 1
-	datafile: example_51.bnn
-	title: USRBIN example 51
 End
