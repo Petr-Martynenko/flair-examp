@@ -2,7 +2,7 @@
 Version: 300
 Mode: fluka
 Title: Charged pion fluence inside and around a proton-irradiated Be target
-md5: 3c1166cabf1c6438faa79682b23c4f25
+md5: a84ba034dd0e37fe04d15c037a1dec70
 Input:
 *..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 TITLE
@@ -62,7 +62,7 @@ USRBIN Edeposit 10. DOSE -51. 10. 10. 5. -10. -10. 0.0 20. 20. 5.
 *..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 RANDOMIZ , 1.
 *..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-START , 4000.
+START , 40000.
 STOP
 EndInput
 
@@ -75,7 +75,7 @@ plotengine: Gnuplot
 # Run information
 Run: <default>
 	Status:   3
-	StartRun: 1641134641
+	StartRun: 1641135535
 
 	# USRxxx data file: example_47.bnx
 	Data: \I_\U.\e
