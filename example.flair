@@ -2,7 +2,7 @@
 Version: 300
 Mode: fluka
 Title: Charged pion fluence inside and around a proton-irradiated Be target
-md5: a84ba034dd0e37fe04d15c037a1dec70
+md5: 5ca274948a5228e74b62f8d9fb923815
 Input:
 *..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 TITLE
@@ -62,7 +62,7 @@ USRBIN Edeposit 10. DOSE -51. 10. 10. 5. -10. -10. 0.0 20. 20. 5.
 *..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
 RANDOMIZ , 1.
 *..+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8
-START , 40000.
+START , 100000.
 STOP
 EndInput
 
@@ -75,7 +75,7 @@ plotengine: Gnuplot
 # Run information
 Run: <default>
 	Status:   3
-	StartRun: 1641135535
+	StartRun: 1641237966
 
 	# USRxxx data file: example_47.bnx
 	Data: \I_\U.\e
@@ -116,4 +116,34 @@ Run: <default>
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
+End
+
+# Plots information
+Plot: Red
+	Type: Geometry
+	basisu: 0 0 1
+	basisv: 1 0 0
+	coord: Z-X
+	extends: 100 51.0692
+	layer: Media
+End
+Plot: Green
+	Type: Geometry
+	basisu: 0.836516 0.0173376 0.547668
+	basisv: 0.224144 0.901221 -0.370891
+	extends: 100 51.0692
+	layer: 3D
+End
+Plot: Blue
+	Type: Geometry
+	basisu: 0 0 1
+	coord: Z-Y
+	extends: 100 50.9434
+	layer: Media
+End
+Plot: Magenta
+	Type: Geometry
+	coord: X-Y
+	extends: 100 50.9434
+	layer: Media
 End
